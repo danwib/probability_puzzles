@@ -1,0 +1,184 @@
+[
+  {
+    "puzzle": "Birthday paradox",
+    "case": "n=5",
+    "metrics": {
+      "p_shared": 0.02713557369979347
+    }
+  },
+  {
+    "puzzle": "Birthday paradox",
+    "case": "n=10",
+    "metrics": {
+      "p_shared": 0.11694817771107768
+    }
+  },
+  {
+    "puzzle": "Birthday paradox",
+    "case": "n=20",
+    "metrics": {
+      "p_shared": 0.41143838358058005
+    }
+  },
+  {
+    "puzzle": "Birthday paradox",
+    "case": "n=23",
+    "metrics": {
+      "p_shared": 0.5072972343239854
+    }
+  },
+  {
+    "puzzle": "Birthday paradox",
+    "case": "n=30",
+    "metrics": {
+      "p_shared": 0.7063162427192687
+    }
+  },
+  {
+    "puzzle": "Birthday paradox",
+    "case": "n=50",
+    "metrics": {
+      "p_shared": 0.9703735795779884
+    }
+  },
+  {
+    "puzzle": "Coupon collector",
+    "case": "n=3",
+    "metrics": {
+      "E[T]_exact": 5.5,
+      "E[T]_approx": 5.527483860708928
+    }
+  },
+  {
+    "puzzle": "Coupon collector",
+    "case": "n=10",
+    "metrics": {
+      "E[T]_exact": 29.289682539682538,
+      "E[T]_approx": 29.298007578955787
+    }
+  },
+  {
+    "puzzle": "Coupon collector",
+    "case": "n=20",
+    "metrics": {
+      "E[T]_exact": 71.95479314287364,
+      "E[T]_approx": 71.95895876911047
+    }
+  },
+  {
+    "puzzle": "Coupon collector",
+    "case": "n=50",
+    "metrics": {
+      "E[T]_exact": 224.96026691647126,
+      "E[T]_approx": 224.96193351648395
+    }
+  },
+  {
+    "puzzle": "Coupon collector",
+    "case": "n=100",
+    "metrics": {
+      "E[T]_exact": 518.737751763962,
+      "E[T]_approx": 518.7385850889625
+    }
+  },
+  {
+    "puzzle": "Bayes PPV/NPV",
+    "case": "sens=0.9, spec=0.95, prev=0.01",
+    "metrics": {
+      "PPV": 0.15384615384615374,
+      "NPV": 0.9989378651088688
+    }
+  },
+  {
+    "puzzle": "Bayes PPV/NPV",
+    "case": "sens=0.9, spec=0.95, prev=0.1",
+    "metrics": {
+      "PPV": 0.6666666666666664,
+      "NPV": 0.9884393063583815
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[max], n=5",
+    "metrics": {
+      "E[max]": 0.8333333333333334
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[X_(k)], n=5, k=1",
+    "metrics": {
+      "E[X_(k)]": 0.16666666666666666
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[X_(k)], n=5, k=3",
+    "metrics": {
+      "E[X_(k)]": 0.5
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[X_(k)], n=5, k=5",
+    "metrics": {
+      "E[X_(k)]": 0.8333333333333334
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[max], n=10",
+    "metrics": {
+      "E[max]": 0.9090909090909091
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[X_(k)], n=10, k=1",
+    "metrics": {
+      "E[X_(k)]": 0.09090909090909091
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[X_(k)], n=10, k=5",
+    "metrics": {
+      "E[X_(k)]": 0.45454545454545453
+    }
+  },
+  {
+    "puzzle": "Order stats",
+    "case": "E[X_(k)], n=10, k=10",
+    "metrics": {
+      "E[X_(k)]": 0.9090909090909091
+    }
+  },
+  {
+    "puzzle": "Balls in bins",
+    "case": "m=10, n=10",
+    "metrics": {
+      "E[empty]": 3.486784401000001
+    }
+  },
+  {
+    "puzzle": "Balls in bins",
+    "case": "m=20, n=10",
+    "metrics": {
+      "E[empty]": 1.2157665459056934
+    }
+  },
+  {
+    "puzzle": "Balls in bins",
+    "case": "m=100, n=10",
+    "metrics": {
+      "E[empty]": 0.00026561398887587544
+    }
+  },
+  {
+    "puzzle": "Balls in bins",
+    "case": "m=100, n=50",
+    "metrics": {
+      "E[empty]": 6.630977794737647
+    }
+  }
+]
