@@ -9,6 +9,7 @@ def ppv(sensitivity: float, specificity: float, prevalence: float) -> float:
     den = num + (1 - specificity) * (1 - prevalence)
     return 0.0 if den == 0 else num / den
 
+
 def npv(sensitivity: float, specificity: float, prevalence: float) -> float:
     """
     Negative Predictive Value:

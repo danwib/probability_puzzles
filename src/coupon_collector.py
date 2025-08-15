@@ -1,7 +1,9 @@
 import math
 
+
 def harmonic_number(n: int) -> float:
     return sum(1.0 / k for k in range(1, n + 1))
+
 
 def expected_trials_to_collect(n: int) -> float:
     """
@@ -10,6 +12,7 @@ def expected_trials_to_collect(n: int) -> float:
     if n <= 0:
         raise ValueError("n must be positive")
     return n * harmonic_number(n)
+
 
 def expected_trials_approx(n: int) -> float:
     """

@@ -6,6 +6,7 @@ def expected_max_uniform(n: int) -> float:
         raise ValueError("n must be positive")
     return n / (n + 1)
 
+
 def expected_kth_uniform(n: int, k: int) -> float:
     """
     E[k-th order stat of n i.i.d. Uniform(0,1)] = k/(n+1), 1 <= k <= n

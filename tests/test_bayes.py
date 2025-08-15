@@ -1,4 +1,5 @@
-from src.bayes import ppv, npv
+from src.bayes import npv, ppv
+
 
 def test_basic_values():
     sens, spec, prev = 0.9, 0.95, 0.1
