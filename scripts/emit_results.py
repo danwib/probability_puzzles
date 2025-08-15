@@ -11,15 +11,11 @@ from src.order_stats import expected_kth_uniform, expected_max_uniform
 
 # --- Try to import vectorised MC; fall back to classic if not present ---
 try:
-    from src.sim import (
-        simulate_birthday_vec as simulate_birthday_mc,
-        simulate_coupon_collector_vec as simulate_coupon_mc,
-    )
+    from src.sim import simulate_birthday_vec as simulate_birthday_mc
+    from src.sim import simulate_coupon_collector_vec as simulate_coupon_mc
 except Exception:
-    from src.sim import (
-        simulate_birthday as simulate_birthday_mc,
-        simulate_coupon_collector as simulate_coupon_mc,
-    )
+    from src.sim import simulate_birthday as simulate_birthday_mc
+    from src.sim import simulate_coupon_collector as simulate_coupon_mc
 
 # --- Configurable MC trial counts via env vars (keep defaults modest) ---
 MC_TRIALS_BDAY = int(os.environ.get("MC_TRIALS_BDAY", "5000"))

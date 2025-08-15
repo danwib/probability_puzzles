@@ -3,42 +3,54 @@
     "puzzle": "Birthday paradox",
     "case": "n=5",
     "metrics": {
-      "p_shared": 0.02713557369979347
+      "p_shared": 0.02713557369979347,
+      "p_shared_mc": 0.0284,
+      "abs_err": 0.0012644263002065323
     }
   },
   {
     "puzzle": "Birthday paradox",
     "case": "n=10",
     "metrics": {
-      "p_shared": 0.11694817771107768
+      "p_shared": 0.11694817771107768,
+      "p_shared_mc": 0.11725,
+      "abs_err": 0.0003018222889223099
     }
   },
   {
     "puzzle": "Birthday paradox",
     "case": "n=20",
     "metrics": {
-      "p_shared": 0.41143838358058005
+      "p_shared": 0.41143838358058005,
+      "p_shared_mc": 0.4095,
+      "abs_err": 0.001938383580580072
     }
   },
   {
     "puzzle": "Birthday paradox",
     "case": "n=23",
     "metrics": {
-      "p_shared": 0.5072972343239854
+      "p_shared": 0.5072972343239854,
+      "p_shared_mc": 0.49815,
+      "abs_err": 0.009147234323985454
     }
   },
   {
     "puzzle": "Birthday paradox",
     "case": "n=30",
     "metrics": {
-      "p_shared": 0.7063162427192687
+      "p_shared": 0.7063162427192687,
+      "p_shared_mc": 0.7084,
+      "abs_err": 0.002083757280731291
     }
   },
   {
     "puzzle": "Birthday paradox",
     "case": "n=50",
     "metrics": {
-      "p_shared": 0.9703735795779884
+      "p_shared": 0.9703735795779884,
+      "p_shared_mc": 0.9682,
+      "abs_err": 0.0021735795779884715
     }
   },
   {
@@ -46,7 +58,9 @@
     "case": "n=3",
     "metrics": {
       "E[T]_exact": 5.5,
-      "E[T]_approx": 5.527483860708928
+      "E[T]_approx": 5.527483860708928,
+      "E[T]_mc": 5.5424,
+      "rel_err": 0.007709090909090868
     }
   },
   {
@@ -54,7 +68,9 @@
     "case": "n=10",
     "metrics": {
       "E[T]_exact": 29.289682539682538,
-      "E[T]_approx": 29.298007578955787
+      "E[T]_approx": 29.298007578955787,
+      "E[T]_mc": 29.2433,
+      "rel_err": 0.001583579460777559
     }
   },
   {
@@ -62,7 +78,9 @@
     "case": "n=20",
     "metrics": {
       "E[T]_exact": 71.95479314287364,
-      "E[T]_approx": 71.95895876911047
+      "E[T]_approx": 71.95895876911047,
+      "E[T]_mc": 71.8484,
+      "rel_err": 0.0014786109198088849
     }
   },
   {
@@ -70,7 +88,9 @@
     "case": "n=50",
     "metrics": {
       "E[T]_exact": 224.96026691647126,
-      "E[T]_approx": 224.96193351648395
+      "E[T]_approx": 224.96193351648395,
+      "E[T]_mc": 225.2285,
+      "rel_err": 0.0011923575981012584
     }
   },
   {
@@ -78,7 +98,9 @@
     "case": "n=100",
     "metrics": {
       "E[T]_exact": 518.737751763962,
-      "E[T]_approx": 518.7385850889625
+      "E[T]_approx": 518.7385850889625,
+      "E[T]_mc": 521.1077,
+      "rel_err": 0.0045686827842759
     }
   },
   {
