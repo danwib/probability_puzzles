@@ -4,6 +4,8 @@ from src.coupon_collector import expected_trials_to_collect, expected_trials_app
 from src.bayes import ppv, npv
 from src.order_stats import expected_max_uniform, expected_kth_uniform
 from src.balls_bins import expected_empty_bins
+from src.sim import simulate_birthday, simulate_coupon_collector
+
 
 def main():
     p = argparse.ArgumentParser(description="Probability puzzles CLI")
@@ -16,13 +18,21 @@ def main():
     om = sub.add_parser("order-max"); om.add_argument("n", type=int)
     ok = sub.add_parser("order-k"); ok.add_argument("n", type=int); ok.add_argument("k", type=int)
     eb = sub.add_parser("empty-bins"); eb.add_argument("m", type=int); eb.add_argument("n", type=int)
+    b.add_argument("--mc-trials", type=int, default=0, help="If >0, include Monte Carlo estimate")
+    c.add_argument("--mc-trials", type=int, default=0, help="If >0, include Monte Carlo estimate")
 
     args = p.parse_args()
     if args.cmd == "birthday":
         out = {"n": args.n, "days": args.days, "p_shared": prob_shared_birthday(args.n, args.days)}
+        if args.mc_trials > 0:
+            mc = simulate_birthday(args.n, trials=args.mc_trials, days=args.days, seed=0)
+            out.update({"p_shared_mc": mc, "abs_err": abs(out["p_shared"] - mc)})
     elif args.cmd == "coupon":
         val = expected_trials_approx(args.n) if args.approx else expected_trials_to_collect(args.n)
         out = {"n": args.n, "expected_trials": val, "approx": bool(args.approx)}
+        if args.mc_trials > 0 and not args.approx:
+            mc = simulate_coupon_collector(args.n, trials=args.mc_trials, seed=0)
+            out.update({"expected_trials_mc": mc, "rel_err": abs(val - mc) / val})
     elif args.cmd == "bayes":
         out = {"ppv": ppv(args.sens, args.spec, args.prev), "npv": npv(args.sens, args.spec, args.prev)}
     elif args.cmd == "order-max":
